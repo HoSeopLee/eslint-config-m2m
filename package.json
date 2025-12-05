@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-m2m",
-  "version": "1.0.5",
+  "version": "1.0.0",
   "description": "Shared ESLint configuration for React and Next.js projects",
   "main": "index.js",
   "type": "module",
