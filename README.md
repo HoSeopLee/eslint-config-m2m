@@ -1,9 +1,9 @@
-# m2m-eslint-config
+# eslint-config-m2m
 
 SmartM2M 프로젝트를 위한 공유 ESLint 설정 패키지입니다.
 
-- 📦 [npm 패키지](https://www.npmjs.com/package/m2m-eslint-config)
-- 🐙 [GitHub 저장소](https://github.com/HoSeopLee/m2m-eslint-config)
+- 📦 [npm 패키지](https://www.npmjs.com/package/eslint-config-m2m)
+- 🐙 [GitHub 저장소](https://github.com/HoSeopLee/eslint-config-m2m)
 
 ## 설치
 
@@ -11,7 +11,7 @@ SmartM2M 프로젝트를 위한 공유 ESLint 설정 패키지입니다.
 
 ```bash
 # 1단계: 라이브러리 설치
-npm install --save-dev m2m-eslint-config
+npm install --save-dev eslint-config-m2m
 
 # 2단계: 필수 의존성 설치
 npm install --save-dev \
@@ -37,7 +37,7 @@ npm install --save-dev @next/eslint-plugin-next
 
 ```bash
 # 1단계: 라이브러리 설치
-yarn add -D m2m-eslint-config
+yarn add -D eslint-config-m2m
 
 # 2단계: 필수 의존성 설치
 yarn add -D \
@@ -63,7 +63,7 @@ yarn add -D @next/eslint-plugin-next
 
 ```bash
 # 1단계: 라이브러리 설치
-pnpm add -D m2m-eslint-config
+pnpm add -D eslint-config-m2m
 
 # 2단계: 필수 의존성 설치
 pnpm add -D \
@@ -95,29 +95,29 @@ pnpm add -D @next/eslint-plugin-next
 
 ```javascript
 // 방법 1: 명시적으로 react 사용 (권장)
-import reactConfig from 'm2m-eslint-config/react';
+import reactConfig from 'eslint-config-m2m/react';
 
 export default reactConfig;
 
 // 방법 2: 기본 export 사용 (하위 호환성)
-import eslintConfig from 'm2m-eslint-config';
+import eslintConfig from 'eslint-config-m2m';
 
 export default eslintConfig;
 ```
 
 ### Next.js 프로젝트
 
-Next.js 프로젝트의 경우 `m2m-eslint-config/next`를 사용하세요:
+Next.js 프로젝트의 경우 `eslint-config-m2m/next`를 사용하세요:
 
 ```javascript
-import nextConfig from 'm2m-eslint-config/next';
+import nextConfig from 'eslint-config-m2m/next';
 
 export default nextConfig;
 ```
 
 > **참고**: 
 > - Next.js 설정은 React 설정을 기반으로 하며, Next.js 전용 규칙이 추가로 적용됩니다.
-> - 기본 export (`m2m-eslint-config`)는 React 설정을 반환하며, 하위 호환성을 위해 유지됩니다.
+> - 기본 export (`eslint-config-m2m`)는 React 설정을 반환하며, 하위 호환성을 위해 유지됩니다.
 > - 새로운 프로젝트에서는 명시적으로 `/react` 또는 `/next`를 사용하는 것을 권장합니다.
 
 ### 개별 모듈 사용
@@ -125,13 +125,13 @@ export default nextConfig;
 필요한 모듈만 선택적으로 사용할 수 있습니다:
 
 ```javascript
-import eslintConfig from 'm2m-eslint-config';
-import reactConfig from 'm2m-eslint-config/react';
-import tsConfig from 'm2m-eslint-config/ts';
-import a11yConfig from 'm2m-eslint-config/a11y';
-import importConfig from 'm2m-eslint-config/import';
-import prettierConfig from 'm2m-eslint-config/prettier';
-import nextConfig from 'm2m-eslint-config/next'; // Next.js 전용
+import eslintConfig from 'eslint-config-m2m';
+import reactConfig from 'eslint-config-m2m/react';
+import tsConfig from 'eslint-config-m2m/ts';
+import a11yConfig from 'eslint-config-m2m/a11y';
+import importConfig from 'eslint-config-m2m/import';
+import prettierConfig from 'eslint-config-m2m/prettier';
+import nextConfig from 'eslint-config-m2m/next'; // Next.js 전용
 
 export default [
   ...eslintConfig,
@@ -146,7 +146,7 @@ export default [
 기본 설정을 확장하여 커스터마이징할 수 있습니다:
 
 ```javascript
-import eslintConfig from 'm2m-eslint-config';
+import eslintConfig from 'eslint-config-m2m';
 
 export default [
   ...eslintConfig,
@@ -166,7 +166,7 @@ export default [
 Vite 프로젝트의 경우 `tsconfig.app.json`을 사용합니다:
 
 ```javascript
-import eslintConfig from 'm2m-eslint-config';
+import eslintConfig from 'eslint-config-m2m';
 import path from 'path';
 import { fileURLToPath } from 'url';
 
@@ -203,7 +203,7 @@ export default [
 Next.js 프로젝트의 경우 `tsconfig.json`을 사용하며, Next.js 전용 설정을 활용합니다:
 
 ```javascript
-import nextConfig from 'm2m-eslint-config/next';
+import nextConfig from 'eslint-config-m2m/next';
 import path from 'path';
 import { fileURLToPath } from 'url';
 

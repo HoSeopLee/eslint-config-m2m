@@ -6,10 +6,10 @@
  * 
  * @example
  * // React 프로젝트
- * import reactConfig from 'm2m-eslint-config/react';
+ * import reactConfig from 'eslint-config-m2m/react';
  * 
  * // Next.js 프로젝트
- * import nextConfig from 'm2m-eslint-config/next';
+ * import nextConfig from 'eslint-config-m2m/next';
  */
 import reactConfig from './react.js';
 
