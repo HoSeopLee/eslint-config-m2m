@@ -1,0 +1,38 @@
+#!/bin/bash
+
+# 빠른 테스트 - 실제 프로젝트에서 사용하는 방법 안내
+
+echo "🚀 빠른 테스트 가이드"
+echo ""
+echo "이 패키지를 테스트하는 가장 좋은 방법:"
+echo ""
+echo "1️⃣  npm link (이미 완료됨)"
+echo "   cd /Users/ihoseob/Desktop/SmartM2M/project/eslint/eslint-config"
+echo "   npm link"
+echo ""
+echo "2️⃣  테스트할 프로젝트에서:"
+echo "   cd /path/to/your/project"
+echo "   npm link eslint-config-m2m"
+echo ""
+echo "3️⃣  프로젝트의 eslint.config.js:"
+echo ""
+echo "   // React 프로젝트인 경우"
+echo "   import reactConfig from 'eslint-config-m2m/react';"
+echo "   export default reactConfig;"
+echo ""
+echo "   // Next.js 프로젝트인 경우"
+echo "   import nextConfig from 'eslint-config-m2m/next';"
+echo "   export default nextConfig;"
+echo ""
+echo "4️⃣  테스트 실행:"
+echo "   npx eslint ."
+echo ""
+echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+echo ""
+echo "또는 상대 경로로 직접 사용:"
+echo ""
+echo "   import reactConfig from '../eslint-config/react.js';"
+echo "   export default reactConfig;"
+echo ""
+
+

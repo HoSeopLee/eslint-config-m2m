@@ -49,6 +49,11 @@
     "typescript-eslint": "^8.0.0"
   },
   "devDependencies": {},
+  "scripts": {
+    "test": "node __tests__/test-load.js",
+    "test:load": "node __tests__/test-load.js",
+    "test:lint": "node __tests__/test-config.js"
+  },
   "files": [
     "index.js",
     "react.js",

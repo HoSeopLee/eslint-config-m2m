@@ -31,6 +31,7 @@ export default {
 				groups: [['builtin', 'external', 'internal']],
 				'newlines-between': 'always',
 				alphabetize: { order: 'asc', caseInsensitive: true },
+				warnOnUnassignedImports: false,
 				pathGroups: [
 					{
 						pattern: 'react*',

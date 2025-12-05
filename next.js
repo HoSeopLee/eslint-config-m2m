@@ -83,6 +83,7 @@ export default tseslint.config([
 					groups: [['builtin', 'external', 'internal']],
 					'newlines-between': 'always',
 					alphabetize: { order: 'asc', caseInsensitive: true },
+					warnOnUnassignedImports: false,
 					pathGroups: [
 						{
 							pattern: 'react*',
@@ -222,6 +223,7 @@ export default tseslint.config([
 					groups: [['builtin', 'external', 'internal']],
 					'newlines-between': 'always',
 					alphabetize: { order: 'asc', caseInsensitive: true },
+					warnOnUnassignedImports: false,
 					pathGroups: [
 						{
 							pattern: 'react*',
